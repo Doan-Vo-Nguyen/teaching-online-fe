@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Set config defaults when creating the instance
 const instance = axios.create({
-  baseURL: "http://localhost:10000",
+  baseURL: process.env.API_SERVICE_PRODUCT_URL,
   timeout: 10000,
   withCredentials: true,
 });
