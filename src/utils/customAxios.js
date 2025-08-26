@@ -1,8 +1,8 @@
 import axios from "axios";
-
+ 
 // Set config defaults when creating the instance
 const instance = axios.create({
-  baseURL: process.env.API_SERVICE_PRODUCT_URL,
+  baseURL: import.meta.env.API_SERVICE_PRODUCT_URL || "https://api-service-2e9tk.ondigitalocean.app",
   timeout: 10000,
   withCredentials: true,
 });
